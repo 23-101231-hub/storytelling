@@ -12,6 +12,10 @@ body {
 }
 
 .hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,7 +23,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  background-image: url(imgs/EE-Banner-website-optimized\ 1.png);
     position: relative;
     overflow: hidden;
 }
@@ -155,10 +159,14 @@ body {
 }
 
 .image-grid {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 30px;
+     
+   
 }
 
 .image-placeholder {
